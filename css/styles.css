@@ -28,6 +28,8 @@ ul{
 }
 img{
     display: block;
+    width: 100%;
+    height: auto;
 }
 .list{
     list-style: none;
@@ -63,18 +65,34 @@ address{
     padding-right: 15px;
     margin: 0 auto;
 }
+
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+
+.item{
+    margin-top: 30px;
+    margin-left: 30px;
+}
 
 
 /*--------HEADER-----------*/
-
 .header{
-    padding-top: 24px;
-    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
+
+.header .logo{
+    margin-right: 93px;
+}
+
+
 .header-container{
     display: flex;
     align-items: center;
@@ -95,11 +113,12 @@ color:var(--dark-text-color)
 .header-list{
     color:var(--dark-text-color);
     display: flex;
-    margin-left: 93px;
+    
 }
 .header-contact-list{
 display: flex;
 margin-left: auto;
+align-items: center;
 }
 .header-item:not(:last-child){
     margin-right: 50px;
@@ -113,6 +132,10 @@ margin-left: auto;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
+padding-top: 32px;
+padding-bottom: 32px;
+display: flex;
+align-items: center;
 
 }
 .header-link:hover,
@@ -127,12 +150,19 @@ letter-spacing: 0.02em;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer .logo{
+    margin-bottom: 20px;
+}
+
 .footer-logo-span{
 color:var(--light-text-color);
 }
-.footer-list:not(:last-child){
-    margin-top: 20px;
-    padding-bottom: 9px;
+.footer-item:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .footer-link[target="_blank"]{
@@ -164,8 +194,10 @@ text-transform: uppercase;
 color:var(--light-text-color);
 margin-bottom: 40px;
 text-align: center;
-padding-left: 252px;
-padding-right: 252px;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+
 
 
 
@@ -177,8 +209,6 @@ line-height: 1.875;
 letter-spacing: 0.06em;
 color: var(--light-text-color);
 background-color:var(--accent-color);
-min-width: 200px;
-min-height: 50px;
 padding: 10px 32px;
 
 
@@ -187,6 +217,10 @@ padding: 10px 32px;
 }
 /*---------ABOUT----------*/
 
+.about{
+padding-bottom: 0;
+}
+
 
 .about-title{
 font-size: 14px;
@@ -194,21 +228,22 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color:var(--dark-text-color);
+margin-bottom: 10px;
 }
 
 .about-list{
     display: flex;
 }
 
-.about-item:not(:last-child){
-    margin-right: 30px;
+.about-item{
+    flex-basis: calc(100% / 4 - 30px);
 }
 
-.about-text{
-    max-width: 270px;
-    min-height: 75px;
-    margin-top: 10px;
-}
+
+
+
+
+
 
 
 /*----------WORK----------*/
@@ -224,9 +259,10 @@ text-align: center;
 .work-list{
 display: flex;
 }
-.work-item:not(:last-child){
-    margin-right: 30px;
+.work-item{
+    flex-basis: calc(100% / 3 - 30px);
 }
+
 
 
 /*---------TEAM------------*/
@@ -236,19 +272,22 @@ display: flex;
 .team-list{
     display: flex;
 }
-.team-item:not(:last-child){
-    margin-right: 30px;
-}
+
 
 .team-item{
     background-color:var(--light-background-color);
-    padding-bottom: 30px;
     text-align: center;
+    flex-basis: calc(100% / 4 - 30px);
 }
+
+.teem-content{
+padding: 30px;
+}
+
+
 .team-people{
 font-weight: 500;
 color:var(--dark-text-color);
-margin-top: 30px;
 margin-bottom: 10px;
 
 }
@@ -289,16 +328,10 @@ color:var(--light-text-color);
 background-color:var(--accent-color);
 }
 
-.portfolio-list{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-}
+
+
 .portfolio-item{
     width: calc(100 / 3 - 30px) ;
-    margin-right: 30px;
-    margin-bottom: 30px;
 }
 
 .portfolio-content{
@@ -307,7 +340,8 @@ background-color:var(--accent-color);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
-    max-width: 370px;
+    padding-right: 24px;
+   
     
     
 }
@@ -317,7 +351,7 @@ background-color:var(--accent-color);
     line-height: 2;
     letter-spacing: 0.06em;
     color:var(--dark-text-color);
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 .portfolio-project-class{
     font-weight: normal;

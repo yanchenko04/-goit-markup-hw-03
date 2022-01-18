@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <link href="./css/styles.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -9,6 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet"> 
     <title>Web Studio</title>
 </head>
 <body>
@@ -42,20 +42,20 @@
     <!--О нас-->
     <section class="about section">
         <div class="container">
-        <ul class="list about-list">
-            <li class="about-item">
+        <ul class="list about-list card-set">
+            <li class="about-item item">
                 <h3 class="about-title">Внимание к деталям</h3>
                 <p class="about-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="about-item">
+            <li class="about-item item">
                 <h3 class="about-title">Пунктуальность</h3>
                 <p class="about-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="about-item">
+            <li class="about-item item">
                 <h3 class="about-title">Планирование</h3>
                 <p class="about-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="about-item">
+            <li class="about-item item">
                 <h3 class="about-title">Современные технологии</h3>
                 <p class="about-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -66,10 +66,10 @@
     <section class="work section"> 
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list work-list">
-            <li class="work-item"><img src="./images/about_section_img_1.jpg" alt="Написание кода" width="370" height="294"></li>
-            <li class="work-item"><img src="./images/about_section_img_2.jpg" alt="Разробка мобильного приложения" width="370" height="294"></li>
-            <li class="work-item"><img src="./images/about_section_img_3.jpg" alt="Выбор цветовой палитры" width="370" height="294"></li>
+        <ul class="list work-list card-set">
+            <li class="work-item item"><img src="./images/about_section_img_1.jpg" alt="Написание кода" width="370" height="294"></li>
+            <li class="work-item item"><img src="./images/about_section_img_2.jpg" alt="Разробка мобильного приложения" width="370" height="294"></li>
+            <li class="work-item item"><img src="./images/about_section_img_3.jpg" alt="Выбор цветовой палитры" width="370" height="294"></li>
         </ul>
         </div>
     </section>
@@ -77,26 +77,34 @@
     <section class="team section"> 
         <div class="container">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list team-list">
-            <li class="team-item">
+        <ul class="list team-list card-set">
+            <li class="team-item item">
                 <img src="./images/team_img_1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                <div class="teem-content">
                 <h3 class="team-people">Игорь Демьяненко</h3>
                 <p class="team-position">Product Designer</p>
+                </div>
             </li>
-            <li class="team-item">
+            <li class="team-item item">
                 <img src="./images/team_img_2.jpg" alt="Ольга Репина" width="270" height="260">
+                <div class="teem-content">
                 <h3 class="team-people">Ольга Репина</h3>
                 <p class="team-position">Frontend Developer</p>
+                </div>
             </li>
-            <li class="team-item">
+            <li class="team-item item">
                 <img src="./images/team_img_3.jpg" alt="Николай Тарасов" width="270" height="260">
+                <div class="teem-content">
                 <h3 class="team-people">Николай Тарасов</h3>
                 <p class="team-position">Marketing</p>
+                </div>
             </li>
-            <li class="team-item">
+            <li class="team-item item">
                 <img src="./images/team_img_4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                <div class="teem-content">
                 <h3 class="team-people">Михаил Ермаков</h3>
                 <p class="team-position">UI Designer</p>
+                </div>
             </li>
 
         </ul>
@@ -106,7 +114,7 @@
 </main>
 
 <footer class="footer">
-    <div class="container">
+    <div class="container footer-container">
     <a href="" class="link logo">Web<span class="footer-logo-span">Studio</span></a>
     <address class="footer-address">
         <ul class="list footer-list">
